@@ -1,3 +1,4 @@
+/* Variables de color */
 :root {
   --amarillo: #eaa315;
   --azul: #0071bc;
@@ -12,70 +13,12 @@
   font-weight: 700;
   font-style: normal;
 }
+
 .montserrat-500 {
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-}
-.lato-thin {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.lato-light {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.lato-regular {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.lato-bold {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.lato-black {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.lato-thin-italic {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.lato-light-italic {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.lato-regular-italic {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.lato-bold-italic {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.lato-black-italic {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-style: italic;
 }
 
 * {
@@ -103,12 +46,12 @@
 }
 
 #header__nav {
+  font-size: 0.9rem;
   height: 8vh;
   background-color: var(--azul);
-  color: var(--blanco);
-  border: 1px solid var(--negro);
+  color: var(--blanco);  
   font-weight: 500;
-  text-decoration: none;
+  font-family: Montserrat, sans-serif;
 }
 
 #header__nav__ul {
@@ -120,6 +63,11 @@
   height: 100%;
 }
 
+.header__nav__ul__li.active a {
+  text-decoration: none;
+  text-shadow: 2px 2px 2px var(--negro);
+}
+
 .header__nav__ul__li a {
   color: var(--blanco);
   text-decoration: none;
@@ -127,7 +75,7 @@
 
 .header__nav__ul__li a:hover {
   text-decoration: none;
-  color: var(--negro);
+  color: var(--rojo);
 }
 
 main {
@@ -151,7 +99,8 @@ main {
   padding: 0px 20px 0px 20px;
   gap: 20px;
 }
-main__section__presentacion p {
+
+#main__section__presentacion p {
   margin-bottom: 0px;
 }
 
@@ -160,9 +109,11 @@ main__section__presentacion p {
   font-style: italic;
   font-weight: 400;
 }
+
 #main__section__img {
   max-width: 500px;
 }
+
 footer {
   background-color: var(--negro);
   height: 10vh;
@@ -184,6 +135,7 @@ footer {
   gap: 2px;
   margin-left: 40px;
 }
+
 #footer__section__rrss {
   display: flex;
   align-items: center;
@@ -198,5 +150,4 @@ footer {
 #footer__section__rrss a {
   color: var(--blanco);
   text-decoration: none;
-  
 }
