@@ -7,6 +7,7 @@
   --negro: #000000;
 }
 
+/* Tipografía Oswald */
 .oswald-weight-700 {
   font-family: 'Oswald', sans-serif;
   font-optical-sizing: auto;
@@ -14,6 +15,7 @@
   font-style: normal;
 }
 
+/* Tipografía Montserrat */
 .montserrat-500 {
   font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
@@ -21,12 +23,16 @@
   font-style: normal;
 }
 
+/* Resetear estilos */
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
+/* Estilos generales - header */
 #header__section {
   font-family: Oswald, sans-serif;
   display: flex;
@@ -78,6 +84,7 @@
   color: var(--rojo);
 }
 
+/* main pagina index*/
 main {
   display: flex;
   flex-direction: column;
@@ -114,6 +121,7 @@ main {
   max-width: 500px;
 }
 
+/* Estilos generales - footer */
 footer {
   background-color: var(--negro);
   height: 10vh;
