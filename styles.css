@@ -214,19 +214,14 @@ DESKTOP: 1200px
     justify-content: space-between
     gap: 100px;
   }
-  main{
-    background-color: var(--azul);
-  }
   #main__section__img {
     max-width: 300px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1200px) {
   main {
     gap: 10px;    
-  }
-  main{
-    background-color: var(--amarillo);
   }
   #main__section__img {
     max-width: 400px;
