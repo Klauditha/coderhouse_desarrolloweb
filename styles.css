@@ -167,7 +167,7 @@ TABLET: 768px
 DESKTOP: 1200px
 */
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
   #header__section {
     justify-content: space-between
     gap: 20px;
@@ -210,7 +210,7 @@ DESKTOP: 1200px
 }
 
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #header__section {
     justify-content: space-between
     gap: 100px;
