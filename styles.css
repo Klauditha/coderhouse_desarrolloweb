@@ -302,14 +302,5 @@ DESKTOP: 1200px
   /*PRODUCTOS*/
   #section__productos_listado{
     grid-template-columns: repeat(4, 1fr);
-  }
-  .article_producto{
-    width: 300px;
-    height: 200px;
-  }
-  .article__producto__img{
-    max-width: 350px;
-    max-height: 250px;
-    
   }  
 }
