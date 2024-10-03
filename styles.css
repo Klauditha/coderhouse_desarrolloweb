@@ -28,7 +28,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
+  /*text-decoration: none;*/
   box-sizing: border-box;
 }
 
@@ -55,7 +55,7 @@
   font-size: 0.9rem;
   height: 8vh;
   background-color: var(--azul);
-  color: var(--blanco);  
+  color: var(--blanco);
   font-weight: 500;
   font-family: Montserrat, sans-serif;
 }
@@ -63,7 +63,6 @@
 #header__nav__ul {
   display: flex;
   list-style: none;
-  text-decoration: none;
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
@@ -90,7 +89,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 67vh;
+  min-height: 67vh;
   gap: 20px;
   color: var(--negro);
   font-family: Lato, sans-serif;
@@ -130,6 +129,7 @@ footer {
   font-size: 12px;
   text-decoration: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 10px;
   align-items: center;
@@ -188,3 +188,86 @@ footer {
   width: 300px;
   
 }
+/*
+BREAKPOINTS
+MOVIL: 600px
+TABLET: 768px
+DESKTOP: 1200px
+*/
+
+@media (max-width: 600px) {
+  #header__section {
+    justify-content: space-between
+    gap: 20px;
+  }
+  #header__section h1 {
+    font-size: 1rem;
+  }
+  #header__section__img {
+    margin-left: 20px;
+    max-width: 80px;
+  }
+  #header__nav__ul {
+    font-size: 0.7rem;
+  }
+  main {
+    min-height: 67vh;
+  }
+  #main__section {
+    gap: 10px;
+    flex-direction: column;
+  }
+  #main__section__img {
+    max-width: 300px;
+  }
+  #main__section__presentacion__ul {
+    padding-left: 10px;
+  }
+  footer {
+    padding -top: 20px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  #footer__section__p {
+    margin: 0px;
+  }
+  #footer__section__rrss {
+    margin-right: 20px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 767.98px) {
+  #header__section {
+    justify-content: space-between
+    gap: 100px;
+  }
+  #main__section__img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  main {
+    gap: 10px;    
+  }
+  #main__section__img {
+    max-width: 400px;
+  }
+}
+/*
+
+@media (max-width: 1200px) {
+  main {
+    gap: 10px;    
+  }
+  #main__section__img {
+    max-width: 400px;
+  }
+}
+/* LANDSCAPE */
+/*
+@media (min-width: 768px) and (max-width: 992px) and (orientation: landscape) {
+}*/
+
+*/
