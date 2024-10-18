@@ -33,18 +33,21 @@
 }
 
 /* HEADER - INICIO */
-#header__section {
-  
+#header__section {  
   font-family: Oswald, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  height: 15vh;
+  min-height: 15vh;
+  height: auto;
   gap: 100px;
   background-color: var(--negro);
-  color: var(--azul);
-  font-weight: 700;
+  color: var(--azul);  
+}
+
+#header__section h1 {
+  font-size: 1.5rem;
 }
 
 #header__section__img {
@@ -53,12 +56,8 @@
 }
 
 #header__nav {
-  /*
-  font-size: 0.9rem;
-  font-weight: 500;
-  */
-  
-  height: 8vh;
+  min-height: 8vh;
+  height: auto;
   background-color: var(--azul);
   color: var(--blanco);
   font-size: 0.8rem;
@@ -89,8 +88,7 @@
   text-decoration: none; 
 }
 
-.header__nav__ul__li a:hover {
-  
+.header__nav__ul__li a:hover {  
   text-decoration: none;
   color: var(--rojo);
 }
@@ -102,6 +100,7 @@
   align-items: center;
   justify-content: center;
   min-height: 67vh;
+  height: auto;
   gap: 20px;
   color: var(--negro);
   font-family: Lato, sans-serif;
@@ -115,13 +114,9 @@
   align-items: center;
   justify-content: center;
   padding: 0px 20px 0px 20px;
-  gap: 20px;
+  gap: 0px;
 }
 
-#main__section__presentacion{
-  margin-top: 20px;
-  
-}
 #main__section__presentacion p {
   margin-bottom: 0px;
 }
@@ -139,15 +134,15 @@
 /* FOOTER - INICIO */
 #footer {
   background-color: var(--negro);
-  height: 10vh;
+  /*height: 10vh;*/
+  min-height: 10vh;
+  height: auto;
   color: var(--blanco);
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -247,7 +242,8 @@ DESKTOP: 1200px
   }
   #footer {
     margin-top: 12px;
-    height: 12vh;
+    min-height: 15vh;
+    height: auto;
     padding-top: 5px;
     flex-direction: column;   
   }
@@ -272,7 +268,6 @@ DESKTOP: 1200px
   }*/
 }
 
-
 @media (min-width: 601px) and (max-width: 767.98px) {
   #header__section {
     justify-content: space-between
@@ -292,12 +287,11 @@ DESKTOP: 1200px
 }
 
 @media (min-width: 768px) and (max-width: 1400px) {
-  #main {
-    gap: 10px;    
-  }
+
   #main__section__img {
     max-width: 400px;
   }
+  
   /*PRODUCTOS*/
   #section__productos_listado{
     grid-template-columns: repeat(4, 1fr);
