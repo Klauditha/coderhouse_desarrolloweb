@@ -7,6 +7,7 @@
   --negro: #000000;
 }
 
+/* Variables de tipografía - Inicio */
 /* Tipografía Oswald */
 .oswald-weight-700 {
   font-family: 'Oswald', sans-serif;
@@ -22,6 +23,7 @@
   font-weight: 500;
   font-style: normal;
 }
+/* Variables de tipografía - Fin */
 
 /* Resetear estilos */
 * {
@@ -32,7 +34,7 @@
   box-sizing: border-box;
 }
 
-/* HEADER - INICIO */
+/* HEADER - Inicio */
 #header__section {  
   font-family: Oswald, sans-serif;
   display: flex;
@@ -54,7 +56,8 @@
   margin-left: 50px;
   max-width: 120px;
 }
-
+/* HEADER - Fin */
+/* NAV - Inicio */
 #header__nav {
   min-height: 8vh;
   height: auto;
@@ -92,8 +95,9 @@
   text-decoration: none;
   color: var(--rojo);
 }
-/* HEADER - FIN */
-/* MAIN-INDEX - INICIO */
+/* NAV - Fin */
+
+/* MAIN-Pagina principal - INICIO */
 #main {
   display: flex;
   flex-direction: column;
@@ -130,7 +134,8 @@
 #main__section__img {
   max-width: 500px;
 }
-/* MAIN-INDEX - FIN */
+/* MAIN-Pagina principal - FIN */
+
 /* FOOTER - INICIO */
 #footer {
   background-color: var(--negro);
@@ -172,7 +177,7 @@
 }
 /* FOOTER - FIN */
 
-/**PRODUCTOS**/
+/* Pagina PRODUCTOS - INICIO */
 #section__productos_listado{
   margin : 20px 0px 20px 0px;
   display: grid;
@@ -200,13 +205,63 @@
 .article__producto__h3{
   text-align: center;
 }
+/* Página PRODUCTOS - FIN */
 
-/*ACERCA DE*/
+/* Pagina ACERCA DE - INICIO */
 .card-img-top{
   max-width: 200px;
   max-height: 200px;
   align-self: center;
 }
+/* Pagina ACERCA DE - FIN */
+
+/* Pagina CONTACTO - INICIO */
+#main__section_contacto{
+  margin-top: 20px;  
+}
+
+#main__section__contacto_descrip{
+  color: var(--negro);
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+#main__section__form label{
+ font-family: Lato, sans-serif;
+ font-weight: 800;
+ font-size: 0.8rem;
+ color: var(--azul);
+ line-height: 1.2rem;
+}
+
+#main__section__form input, #main__section__form textarea, #main__section__form select{
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+#main__section__form .form-group, #main__section__form button {
+  margin: 10px 40px 10px 40px;
+}
+#main__section__contacto_image__img{
+  max-width: 500px;
+  align-self: center;
+  border-radius: 20px;
+  border: 2px solid var(--azul);
+}
+
+#main__section__form__btn__submit{
+  margin-left: 70% !important;
+  background-color: var(--azul);
+  width: 100px;
+}
+/* Pagina CONTACTO - FIN */
+
+
 /*
 BREAKPOINTS
 MOVIL: 600px
