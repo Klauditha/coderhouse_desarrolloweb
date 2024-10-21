@@ -231,6 +231,7 @@ DESKTOP: 1200px
     height: auto;
   }
   #main__section {
+    padding: 10px 20px 10px 20px;
     gap: 10px;
     flex-direction: column;
   }
