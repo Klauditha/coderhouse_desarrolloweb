@@ -232,13 +232,17 @@
   margin-top: 20px;
 }
 
-#main__section__contacto_descrip {
+#main__section__contacto_descrip, #main__section__contacto_descrip_mobile {
   color: var(--negro);
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   text-align: center;
   line-height: 1.4rem;
+}
+
+#main__section__contacto_descrip_mobile {
+  display: none;
 }
 
 #main__section__form label {
@@ -285,7 +289,7 @@
   */
 @media (max-width: 600px) {
   #header__section {
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
   }
   #header__section h1 {
@@ -327,15 +331,13 @@
   #section__productos_listado {
     grid-template-columns: repeat(1, 1fr);
   }
-  /*
-    .article_producto{
-      width: 200px;
-      height: 200px;
-    }
-    .article__producto__img{
-      width: 70% !important;
-      height: 70% !important;
-    }*/
+  /*CONTACTO*/
+  #main__section__contacto_image__img, #main__section__contacto_descrip {
+    display: none;
+  }
+  #main__section__contacto_descrip_mobile {
+    display: block;
+  }
 }
 @media (min-width: 601px) and (max-width: 767.98px) {
   #header__section {
