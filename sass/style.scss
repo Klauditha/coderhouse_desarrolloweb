@@ -369,6 +369,18 @@
     max-width: 250px;
     max-height: 150px;
   }
+  /** CONTACTO **/
+  #main__section__contacto_descrip {
+    margin-top: 0px;
+    font-size: 0.8rem;
+  }
+  #main__section__form label {
+    font-size: 0.7rem;
+  }
+  #main__section__contacto_image__img {
+    margin-top: 10%;
+    max-width: 380px;
+  }
 }
 
 @media (min-width: 1401px) {

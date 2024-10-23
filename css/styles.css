@@ -209,37 +209,16 @@
 .article__producto__h3 {
   text-align: center;
 }
+
 /* Página PRODUCTOS - FIN */
-
-
-
 /* Pagina GALERIA - INICIO */
-#main__section__galeria {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;  
-  gap: 10px;
-  margin-top: 20px;
-}
-#main__section__galeria__img{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-#main__section__galeria__img img{
-  max-width: 300px;
-  max-height: 300px;
-  border: 2px solid var(--rojo);
+#main__section__select {
+  /*
+  display: flex;
+  flex-direction: row;*/
 }
 
 /* Pagina GALERIA - FIN */
-
-
-
 /* Pagina ACERCA DE - INICIO */
 .card-img-top {
   max-width: 200px;
@@ -391,6 +370,18 @@
   .article__producto__img {
     max-width: 250px;
     max-height: 150px;
+  }
+  /** CONTACTO **/
+  #main__section__contacto_descrip {
+    margin-top: 0px;
+    font-size: 0.8rem;
+  }
+  #main__section__form label {
+    font-size: 0.7rem;
+  }
+  #main__section__contacto_image__img {
+    margin-top: 10%;
+    max-width: 380px;
   }
 }
 @media (min-width: 1401px) {
