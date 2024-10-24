@@ -1,3 +1,5 @@
+@import "presets/reset.scss";
+
 /* Variables de color */
 :root {
   --amarillo: #eaa315;
@@ -25,14 +27,7 @@
 }
 /* Variables de tipografía - Fin */
 
-/* Resetear estilos */
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-}
+
 
 /* HEADER - Inicio */
 #header__section {
