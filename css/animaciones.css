@@ -1,0 +1,155 @@
+.box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  column-gap: 20px;
+  flex-direction: column;
+}
+
+.box section {
+  display: flex;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 20px;
+}
+
+/*GRADIENTE*/
+.box1 .caja1 {
+  background-image: linear-gradient(to left, red, yellow, red, green);
+}
+
+.box1 .caja2 {
+  background-image: linear-gradient(to top, red, yellow, red, green);
+}
+
+.box1 .caja3 {
+  background-image: radial-gradient(circle, red, yellow);
+}
+
+.box1 .caja4 {
+    background-image: radial-gradient(ellipse 30px 80px, red, yellow);
+  }
+  
+
+/*TRANSFORMACIONES - TRANSLATE*/
+
+.box2 .caja1:hover {
+    /*transform:
+    primer valor: x - desplazamiento horizontal
+    segundo valor: y - desplazamiento vertical
+    valores negativos: mover a la izquierda o arriba
+    valores positivos: mover a la derecha o abajo
+    */
+    transform: translate(100px, 100px);
+    transition: 1s;
+}
+
+.box2 .caja2:hover {
+    transform: translate(-20px, -30px);
+    transition: 1s;
+}
+
+.box2 .caja3:hover {
+    transform: translateX(-20px);
+    transition: 1s;
+}
+
+.box2 .caja4:hover {
+    transform: translateY(-20px);
+    transition: 1s;
+}
+
+/*TRANSFORMACIONES - rotate*/
+
+.box3 .caja1:hover {
+    /*
+    valor positivo: rotar a la derecha - sentido horario
+    valor negativo: rotar a la izquierda - sentido antihorario
+    */
+    transform: rotate(90deg);
+    transition: 1s;
+}
+
+.box3 .caja2:hover {
+    transform: rotate(-90deg);
+    transition: 1s;
+}
+
+.box3 .caja3:hover {
+    transform: rotateX(90deg);
+    transition: 1s;
+}
+
+.box3 .caja4:hover {
+    transform: rotateY(90deg);
+    transition: 1s;
+}
+
+/*TRANSFORMACIONES - scale*/
+
+.box4 .caja1:hover {
+    /*
+    valor positivo: agrandar
+    valor negativo (menores a cero): achicar
+    primer valor: x - ancho
+    segundo valor: y - alto
+    */
+    transform: scale(2,2);
+    transition: 1s;
+}
+
+.box4 .caja2:hover {
+    transform: scaleX(2);
+    transition: 1s;
+}
+
+.box4 .caja3:hover {
+    transform: scaleY(2);
+    transition: 1s;
+}
+
+/*TRANSFORMACIONES - skew (torcer)*/
+
+.box5 .caja1:hover {
+    /*
+    primer valor: x - angulo de torcedura
+    segundo valor: y - angulo de torcedura
+    valores negativos: torcer hacia la derecha o abajo
+    valores positivos: torcer hacia la izquierda o arriba
+    */
+    transform: skew(30deg, 20deg);
+    transition: 1s;
+}
+
+.box5 .caja2:hover {
+    transform: skewX(30deg);
+    transition: 1s;
+}
+
+.box5 .caja3:hover {    
+    transform: skewY(30deg);
+    transition: 1s;
+}
+
+@keyframes un_efecto {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.box6 .caja1:hover {
+    animation-name: un_efecto;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
