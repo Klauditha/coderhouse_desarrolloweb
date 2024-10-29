@@ -1,0 +1,65 @@
+
+
+/* HEADER - Inicio */
+#header__section {
+    font-family: Oswald, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 15vh;
+    height: auto;
+    gap: 100px;
+    background-color: $color-negro;
+    color: $color-azul;
+  }
+  
+  #header__section h1 {
+    font-size: 1.5rem;
+  }
+  
+  #header__section__img {
+    margin-left: 50px;
+    max-width: 120px;
+  }
+  /* HEADER - Fin */
+  /* NAV - Inicio */
+  #header__nav {
+    min-height: 8vh;
+    height: auto;
+    background-color: $color-azul;
+    color: $color-blanco;
+    font-size: 0.8rem;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .navbar-brand {
+    color: $color-blanco;
+    text-shadow: 2px 2px 2px $color-negro;
+    font-size: 0.9rem;
+  }
+  #navbarSupportedContent {
+    background-color: $color-azul;
+    color: $color-blanco;
+  }
+  
+  #navbarSupportedContent #header__nav__ul .nav-item {
+    margin-left: 10px;
+  }
+  
+  .header__nav__ul__li.active a {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px $color-negro;
+  }
+  
+  .header__nav__ul__li a {
+    color: $color-blanco;
+    text-decoration: none;
+  }
+  
+  .header__nav__ul__li a:hover {
+    text-decoration: none;
+    color: $color-rojo;
+  }
+  /* NAV - Fin */
+  
