@@ -54,7 +54,7 @@
     #footer__section__rrss {
       gap: 50px;
       margin-right: 0px;
-      padding-top: 10px;      
+      padding-top: 10px;
       padding-bottom: 0.5rem;
       a {
         font-size: 1.5rem;
@@ -131,6 +131,21 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1400px) {
+  #footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    #footer__section__p {
+      p {
+        font-size: 0.8rem;
+        margin: 0px;
+      }
+    }
+    #footer__section__rrss {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
   #main__section__img {
     max-width: 400px;
   }
@@ -149,22 +164,46 @@
   }
 
   /** CONTACTO **/
-  #main__section__contacto_descrip {
-    margin-top: 0px;
-    font-size: 0.8rem;
-  }
-  #main__section__form {
-    label {
-      font-size: 0.7rem;
+
+  #main__section_contacto {
+    #main__section__contacto_descrip {
+      p{
+        margin-top: 0px;
+        font-size: 0.8rem;
+      }
+      
     }
-  }
-  #main__section__contacto_image__img {
-    margin-top: 10%;
-    max-width: 380px;
+    #main__section__form {
+      label, input, textarea, select {
+        margin: 0px;
+        font-size: 0.7rem;
+      }
+    }
+    #main__section__contacto_image {
+      #main__section__contacto_image__img {
+        margin-top: 10%;
+        max-width: 350px;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1401px) {
+  #footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    #footer__section__p {
+      p {
+        font-size: 0.9rem;
+        margin: 0px;
+      }
+    }
+    #footer__section__rrss {
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
   #main {
     gap: 10px;
     #main__section__img {
