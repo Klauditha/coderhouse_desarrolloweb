@@ -33,168 +33,6 @@
   padding: 10px;
 }
 
-/********************************************************/
-/***********************movil vertical******************/
-/********************************************************/
-@media screen and (max-width: 600px) {
-  #header__section {
-    min-height: 10vh;
-    justify-content: center;
-    gap: 20px;
-  }
-  #header__section #header__section__img {
-    margin-left: 20px;
-    max-width: 80px;
-  }
-  #header__section h1 {
-    font-size: 1rem;
-  }
-  #main {
-    min-height: 60vh;
-    height: auto;
-  }
-  #main #main__section {
-    padding: 10px 20px 10px 20px;
-    gap: 10px;
-    flex-direction: column;
-  }
-  #main #main__section #main__section__presentacion {
-    margin-top: 1rem;
-  }
-  #main #main__section #main__section__img {
-    max-width: 300px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  #main #main__section #main__section__presentacion__ul {
-    padding-left: 10px;
-  }
-  #footer {
-    min-height: 10vh;
-    height: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    flex-direction: column;
-  }
-  #footer #footer__section__p {
-    margin: 0px;
-  }
-  #footer #footer__section__p p {
-    padding: 0px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  #footer #footer__section__p #footer__section__rrss {
-    gap: 50px;
-    margin-right: 0px;
-    padding-top: 10px;
-    font-size: 1.6rem;
-  }
-  /*PRODUCTOS*/
-  #section__productos_listado {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  /*CONTACTO*/
-  #main__section_contacto {
-    margin-top: 0px;
-  }
-  #main__section_contacto #main__section__contacto_image__img,
-  #main__section_contacto #main__section__contacto_descrip {
-    display: none;
-  }
-  #main__section_contacto #main__section__contacto_descrip_mobile {
-    display: block;
-  }
-}
-/********************************************************/
-/***********************tablet vertical******************/
-/********************************************************/
-@media screen and (min-width: 601px) and (max-width: 767.98px) {
-  #header__section {
-    min-height: 10vh;
-    justify-content: center;
-    gap: 20px;
-  }
-  #main {
-    min-height: 60vh;
-    height: auto;
-  }
-  #main #main__section__img {
-    max-width: 300px;
-  }
-  #footer {
-    min-height: 10vh;
-    height: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    flex-direction: column;
-  }
-  #footer #footer__section__p p {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  #footer #footer__section__rrss {
-    gap: 50px;
-    margin-right: 0px;
-    padding-top: 10px;
-    font-size: 1.6rem;
-  }
-  /*PRODUCTOS*/
-  #section__productos_listado {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  /*CONTACTO*/
-  #main__section_contacto {
-    margin-top: 0px;
-  }
-  #main__section_contacto #main__section__contacto_image__img {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1400px) {
-  #main__section__img {
-    max-width: 400px;
-  }
-  /*PRODUCTOS*/
-  #section__productos_listado {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  #section__productos_listado .article_producto {
-    margin: 10 5 10 5;
-    width: 300px;
-    height: 200px;
-  }
-  #section__productos_listado .article_producto .article__producto__img {
-    max-width: 250px;
-    max-height: 150px;
-  }
-  /** CONTACTO **/
-  #main__section__contacto_descrip {
-    margin-top: 0px;
-    font-size: 0.8rem;
-  }
-  #main__section__form label {
-    font-size: 0.7rem;
-  }
-  #main__section__contacto_image__img {
-    margin-top: 10%;
-    max-width: 380px;
-  }
-}
-@media screen and (min-width: 1401px) {
-  #main {
-    gap: 10px;
-  }
-  #main #main__section__img {
-    max-width: 500px;
-  }
-  /*PRODUCTOS*/
-  #section__productos_listado {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 #header__section {
   font-family: Oswald, sans-serif;
   display: flex;
@@ -426,6 +264,173 @@
 
 .article__producto__h3 {
   text-align: center;
+}
+
+/********************************************************/
+/***********************movil vertical******************/
+/********************************************************/
+@media screen and (max-width: 600px) {
+  #header__section {
+    min-height: 10vh;
+    justify-content: center;
+    gap: 20px;
+  }
+  #header__section #header__section__img {
+    margin-left: 20px;
+    max-width: 80px;
+  }
+  #header__section h1 {
+    font-size: 1rem;
+  }
+  #main {
+    min-height: 60vh;
+    height: auto;
+  }
+  #main #main__section {
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+    flex-direction: column;
+  }
+  #main #main__section #main__section__presentacion {
+    margin-top: 1rem;
+  }
+  #main #main__section #main__section__img {
+    max-width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #main #main__section #main__section__presentacion__ul {
+    padding-left: 10px;
+  }
+  #footer {
+    min-height: 10vh;
+    height: auto;
+    flex-direction: column;
+    padding: 0px;
+  }
+  #footer #footer__section__p {
+    margin: 0px;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #footer #footer__section__p p {
+    margin: 0px;
+    text-align: center;
+  }
+  #footer #footer__section__rrss {
+    gap: 50px;
+    margin-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 0.5rem;
+  }
+  #footer #footer__section__rrss a {
+    font-size: 1.5rem;
+  }
+  /*PRODUCTOS*/
+  #section__productos_listado {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /*CONTACTO*/
+  #main__section_contacto {
+    margin-top: 0px;
+  }
+  #main__section_contacto #main__section__contacto_image__img,
+  #main__section_contacto #main__section__contacto_descrip {
+    display: none;
+  }
+  #main__section_contacto #main__section__contacto_descrip_mobile {
+    display: block;
+  }
+}
+/********************************************************/
+/***********************tablet vertical******************/
+/********************************************************/
+@media screen and (min-width: 601px) and (max-width: 767.98px) {
+  #header__section {
+    min-height: 10vh;
+    justify-content: center;
+    gap: 20px;
+  }
+  #main {
+    min-height: 60vh;
+    height: auto;
+  }
+  #main #main__section__img {
+    max-width: 300px;
+  }
+  #footer {
+    min-height: 10vh;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-direction: column;
+  }
+  #footer #footer__section__p p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  #footer #footer__section__rrss {
+    gap: 50px;
+    margin-right: 0px;
+    padding-top: 10px;
+    font-size: 1.6rem;
+  }
+  /*PRODUCTOS*/
+  #section__productos_listado {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /*CONTACTO*/
+  #main__section_contacto {
+    margin-top: 0px;
+  }
+  #main__section_contacto #main__section__contacto_image__img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  #main__section__img {
+    max-width: 400px;
+  }
+  /*PRODUCTOS*/
+  #section__productos_listado {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #section__productos_listado .article_producto {
+    margin: 10 5 10 5;
+    width: 300px;
+    height: 200px;
+  }
+  #section__productos_listado .article_producto .article__producto__img {
+    max-width: 250px;
+    max-height: 150px;
+  }
+  /** CONTACTO **/
+  #main__section__contacto_descrip {
+    margin-top: 0px;
+    font-size: 0.8rem;
+  }
+  #main__section__form label {
+    font-size: 0.7rem;
+  }
+  #main__section__contacto_image__img {
+    margin-top: 10%;
+    max-width: 380px;
+  }
+}
+@media screen and (min-width: 1401px) {
+  #main {
+    gap: 10px;
+  }
+  #main #main__section__img {
+    max-width: 500px;
+  }
+  /*PRODUCTOS*/
+  #section__productos_listado {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

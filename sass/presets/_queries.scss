@@ -22,7 +22,7 @@
       padding: 10px 20px 10px 20px;
       gap: 10px;
       flex-direction: column;
-      #main__section__presentacion{
+      #main__section__presentacion {
         margin-top: 1rem;
       }
       #main__section__img {
@@ -39,24 +39,26 @@
   #footer {
     min-height: 10vh;
     height: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
     flex-direction: column;
-    
+    padding: 0px;
     #footer__section__p {
       margin: 0px;
+      padding-top: 0.5rem;
+      font-size: 0.9rem;
+      text-align: center;
       p {
-        padding: 0px;
+        margin: 0px;
         text-align: center;
-        font-size: 0.9rem;
       }
     }
-    #footer__section__p #footer__section__rrss {
-      
+    #footer__section__rrss {
       gap: 50px;
       margin-right: 0px;
-      padding-top: 10px;
-      font-size: 1.6rem;
+      padding-top: 10px;      
+      padding-bottom: 0.5rem;
+      a {
+        font-size: 1.5rem;
+      }
     }
   }
 
