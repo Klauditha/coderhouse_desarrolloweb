@@ -1,8 +1,8 @@
 #footer {
-  background-color: $color-negro;
   min-height: 10vh;
   height: auto;
   color: $color-blanco;
+  background-color: $color-negro;
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
@@ -10,7 +10,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
   #footer__section__p {
     display: flex;
     flex-direction: column;
@@ -23,10 +22,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    color: $color-blanco;
     font-size: 1rem;
     margin-right: 40px;
     a {
+      color: $color-blanco;
       text-decoration: none;
     }
   }

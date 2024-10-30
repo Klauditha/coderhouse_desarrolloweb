@@ -266,10 +266,10 @@
 }
 
 #footer {
-  background-color: #000000;
   min-height: 10vh;
   height: auto;
   color: #ffffff;
+  background-color: #000000;
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
@@ -290,11 +290,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  color: #ffffff;
   font-size: 1rem;
   margin-right: 40px;
 }
 #footer #footer__section__rrss a {
+  color: #ffffff;
   text-decoration: none;
 }
 
