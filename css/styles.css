@@ -1,11 +1,11 @@
 @charset "UTF-8";
-/* Variables de color */
-:root {
-  --amarillo: #eaa315;
-  --azul: #0071bc;
-  --blanco: #ffffff;
-  --rojo: #fa8375;
-  --negro: #000000;
+/* Resetear estilos */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 /* Variables de tipografía - Inicio */
@@ -26,16 +26,13 @@
 }
 
 /* Variables de tipografía - Fin */
-/* Resetear estilos */
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
+.btn1 {
+  width: 100px;
+  height: 50px;
+  border: 5px;
+  padding: 10px;
 }
 
-/* HEADER - Inicio */
 #header__section {
   font-family: Oswald, sans-serif;
   display: flex;
@@ -45,62 +42,45 @@
   min-height: 15vh;
   height: auto;
   gap: 100px;
-  background-color: var(--negro);
-  color: var(--azul);
+  background-color: #000000;
+  color: #0071bc;
 }
-
+#header__section #header__section__img {
+  margin-left: 50px;
+  max-width: 120px;
+}
 #header__section h1 {
   font-size: 1.5rem;
 }
 
-#header__section__img {
-  margin-left: 50px;
-  max-width: 120px;
-}
-
-/* HEADER - Fin */
-/* NAV - Inicio */
 #header__nav {
   min-height: 8vh;
   height: auto;
-  background-color: var(--azul);
-  color: var(--blanco);
+  background-color: #0071bc;
+  color: #ffffff;
   font-size: 0.8rem;
   font-family: Montserrat, sans-serif;
 }
-
-.navbar-brand {
-  color: var(--blanco);
-  text-shadow: 2px 2px 2px var(--negro);
+#header__nav .navbar-brand {
+  text-shadow: 2px 2px 2px #000000;
   font-size: 0.9rem;
 }
-
-#navbarSupportedContent {
-  background-color: var(--azul);
-  color: var(--blanco);
-}
-
-#navbarSupportedContent #header__nav__ul .nav-item {
+#header__nav #navbarSupportedContent #header__nav__ul .nav-item {
   margin-left: 10px;
 }
-
-.header__nav__ul__li.active a {
-  text-decoration: none;
-  text-shadow: 2px 2px 2px var(--negro);
-}
-
-.header__nav__ul__li a {
-  color: var(--blanco);
+#header__nav #navbarSupportedContent #header__nav__ul .header__nav__ul__li {
   text-decoration: none;
 }
-
-.header__nav__ul__li a:hover {
-  text-decoration: none;
-  color: var(--rojo);
+#header__nav #navbarSupportedContent #header__nav__ul .header__nav__ul__li .active a {
+  text-shadow: 2px 2px 2px #000000;
+}
+#header__nav #navbarSupportedContent #header__nav__ul .header__nav__ul__li a {
+  color: #ffffff;
+}
+#header__nav #navbarSupportedContent #header__nav__ul .header__nav__ul__li a hover {
+  color: #fa8375;
 }
 
-/* NAV - Fin */
-/* MAIN-Pagina principal - INICIO */
 #main {
   display: flex;
   flex-direction: column;
@@ -109,14 +89,13 @@
   min-height: 67vh;
   height: auto;
   gap: 20px;
-  color: var(--negro);
+  color: #000000;
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.2rem;
 }
-
-#main__section {
+#main #main__section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,28 +103,11 @@
   gap: 0px;
 }
 
-#main__section__presentacion p {
-  margin-bottom: 0px;
-}
-
-#main__section__presentacion__ul {
-  padding-left: 40px;
-  font-style: italic;
-  font-weight: 400;
-}
-
-#main__section__img {
-  max-width: 500px;
-}
-
-/* MAIN-Pagina principal - FIN */
-/* FOOTER - INICIO */
 #footer {
-  background-color: var(--negro);
-  /*height: 10vh;*/
   min-height: 10vh;
   height: auto;
-  color: var(--blanco);
+  color: #ffffff;
+  background-color: #000000;
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
@@ -154,33 +116,127 @@
   align-items: center;
   justify-content: space-between;
 }
-
-#footer__section__p {
+#footer #footer__section__p {
   display: flex;
   flex-direction: column;
   font-size: 0.8rem;
   gap: 2px;
   margin-left: 40px;
 }
-
-#footer__section__rrss {
+#footer #footer__section__rrss {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  color: var(--blanco);
-  color: var(--blanco);
   font-size: 1rem;
   margin-right: 40px;
 }
-
-#footer__section__rrss a {
-  color: var(--blanco);
+#footer #footer__section__rrss a {
+  color: #ffffff;
   text-decoration: none;
 }
 
-/* FOOTER - FIN */
-/* Pagina PRODUCTOS - INICIO */
+#main__section__presentacion p {
+  margin-bottom: 0px;
+}
+#main__section__presentacion #main__section__presentacion__ul {
+  padding-left: 40px;
+  font-style: italic;
+  font-weight: 400;
+}
+#main__section__presentacion #main__section__img {
+  max-width: 500px;
+}
+
+.card-img-top {
+  max-width: 200px;
+  max-height: 200px;
+  align-self: center;
+}
+
+#main__section_contacto {
+  margin-top: 20px;
+}
+#main__section_contacto #main__section__contacto_descrip,
+#main__section_contacto #main__section__contacto_descrip_mobile {
+  color: #000000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+#main__section_contacto #main__section__contacto_descrip_mobile {
+  display: none;
+}
+#main__section_contacto #main__section__form {
+  font-family: Lato, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+#main__section_contacto #main__section__form label {
+  font-weight: 800;
+  color: #0071bc;
+}
+#main__section_contacto #main__section__form input,
+#main__section_contacto #main__section__form textarea,
+#main__section_contacto #main__section__form select {
+  font-weight: 400;
+}
+#main__section_contacto #main__section__form .form-group,
+#main__section_contacto #main__section__form button {
+  margin: 10px 40px 10px 40px;
+}
+#main__section_contacto #main__section__form #main__section__form__btn__submit {
+  margin-left: 70% !important;
+  background-color: #0071bc;
+  width: 100px;
+}
+#main__section_contacto #main__section__contacto_image__img {
+  max-width: 500px;
+  align-self: center;
+  border-radius: 20px;
+  border: 2px solid #0071bc;
+}
+
+#main__section__galeria {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#main__section__galeria .row {
+  align-items: center;
+}
+#main__section__galeria .row #main__section__galeria__label {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+#main__section__galeria__img {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+#main__section__galeria__img .card {
+  width: 18rem;
+  height: 14rem;
+  border: 1px solid #eaa315;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+#main__section__galeria__img .card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0071bc;
+}
+#main__section__galeria__img .card .card-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000000;
+}
+
 #section__productos_listado {
   margin: 20px 0px 20px 0px;
   display: grid;
@@ -195,7 +251,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border: 2px solid var(--rojo);
+  border: 2px solid #fa8375;
   border-radius: 10px;
   width: 400px;
   height: 300px;
@@ -210,178 +266,66 @@
   text-align: center;
 }
 
-/****************************/
-/* Página PRODUCTOS - FIN */
-/****************************/
-/****************************/
-/* Pagina GALERIA - INICIO */
-#main__section__galeria {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#main__section__galeria .row {
-  align-items: center;
-}
-
-#main__section__galeria__label {
-  font-family: Montserrat, sans-serif;
-  font-size: 0.8rem;
-  align-items: center;
-}
-
-#main__section__galeria__img {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-}
-
-.card {
-  width: 18rem;
-  height: 14rem;
-  border: 1px solid var(--amarillo);
-}
-
-.card-title {
-  font-family: Montserrat, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--azul);
-  text-align: center;
-}
-
-.card-text {
-  font-family: Montserrat, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-  color: var(--negro);
-  text-align: center;
-}
-
-/****************************/
-/* Pagina GALERIA - FIN */
-/****************************/
-/* Pagina ACERCA DE - INICIO */
-.card-img-top {
-  max-width: 200px;
-  max-height: 200px;
-  align-self: center;
-}
-
-/* Pagina ACERCA DE - FIN */
-/****************************/
-/* Pagina CONTACTO - INICIO */
-/****************************/
-#main__section_contacto {
-  margin-top: 20px;
-}
-
-#main__section__contacto_descrip,
-#main__section__contacto_descrip_mobile {
-  color: var(--negro);
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-align: center;
-  line-height: 1.4rem;
-}
-
-#main__section__contacto_descrip_mobile {
-  display: none;
-}
-
-#main__section__form label {
-  font-family: Lato, sans-serif;
-  font-weight: 800;
-  font-size: 0.8rem;
-  color: var(--azul);
-  line-height: 1.2rem;
-}
-
-#main__section__form input,
-#main__section__form textarea,
-#main__section__form select {
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-}
-
-#main__section__form .form-group,
-#main__section__form button {
-  margin: 10px 40px 10px 40px;
-}
-
-#main__section__contacto_image__img {
-  max-width: 500px;
-  align-self: center;
-  border-radius: 20px;
-  border: 2px solid var(--azul);
-}
-
-#main__section__form__btn__submit {
-  margin-left: 70% !important;
-  background-color: var(--azul);
-  width: 100px;
-}
-
-/* Pagina CONTACTO - FIN */
 /********************************************************/
 /***********************movil vertical******************/
 /********************************************************/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #header__section {
     min-height: 10vh;
-  }
-  #header__section {
     justify-content: center;
     gap: 20px;
   }
+  #header__section #header__section__img {
+    margin-left: 0px;
+    max-width: 80px;
+  }
   #header__section h1 {
     font-size: 1rem;
-  }
-  #header__section__img {
-    margin-left: 20px;
-    max-width: 80px;
   }
   #main {
     min-height: 60vh;
     height: auto;
   }
-  #main__section {
+  #main #main__section {
     padding: 10px 20px 10px 20px;
     gap: 10px;
     flex-direction: column;
   }
-  #main__section__img {
-    max-width: 300px;
+  #main #main__section #main__section__presentacion {
+    margin-top: 1rem;
   }
-  #main__section__presentacion__ul {
+  #main #main__section #main__section__img {
+    max-width: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  #main #main__section #main__section__presentacion__ul {
     padding-left: 10px;
   }
   #footer {
     min-height: 10vh;
     height: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
     flex-direction: column;
-  }
-  #footer__section__p {
-    margin: 0px;
-  }
-  #footer__section__p p {
-    margin: 0px;
     padding: 0px;
-    text-align: center;
-    font-size: 0.9rem;
   }
-  #footer__section__rrss {
+  #footer #footer__section__p {
+    margin: 0px;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  #footer #footer__section__p p {
+    margin: 0px;
+    text-align: center;
+  }
+  #footer #footer__section__rrss {
     gap: 50px;
     margin-right: 0px;
     padding-top: 10px;
-    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+  }
+  #footer #footer__section__rrss a {
+    font-size: 1.5rem;
   }
   /*PRODUCTOS*/
   #section__productos_listado {
@@ -391,18 +335,18 @@
   #main__section_contacto {
     margin-top: 0px;
   }
-  #main__section__contacto_image__img,
-  #main__section__contacto_descrip {
+  #main__section_contacto #main__section__contacto_image__img,
+  #main__section_contacto #main__section__contacto_descrip {
     display: none;
   }
-  #main__section__contacto_descrip_mobile {
+  #main__section_contacto #main__section__contacto_descrip_mobile {
     display: block;
   }
 }
 /********************************************************/
 /***********************tablet vertical******************/
 /********************************************************/
-@media (min-width: 601px) and (max-width: 767.98px) {
+@media screen and (min-width: 601px) and (max-width: 767.98px) {
   #header__section {
     min-height: 10vh;
     justify-content: center;
@@ -412,7 +356,7 @@
     min-height: 60vh;
     height: auto;
   }
-  #main__section__img {
+  #main #main__section__img {
     max-width: 300px;
   }
   #footer {
@@ -422,16 +366,13 @@
     padding-bottom: 5px;
     flex-direction: column;
   }
-  #footer__section__p {
-    margin: 0px;
-  }
-  #footer__section__p p {
+  #footer #footer__section__p p {
     margin: 0px;
     padding: 0px;
     text-align: center;
     font-size: 0.9rem;
   }
-  #footer__section__rrss {
+  #footer #footer__section__rrss {
     gap: 50px;
     margin-right: 0px;
     padding-top: 10px;
@@ -445,11 +386,22 @@
   #main__section_contacto {
     margin-top: 0px;
   }
-  #main__section__contacto_image__img {
+  #main__section_contacto #main__section__contacto_image__img {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1400px) {
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  #footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #footer #footer__section__p p {
+    font-size: 0.8rem;
+    margin: 0px;
+  }
+  #footer #footer__section__rrss a {
+    font-size: 1.2rem;
+  }
   #main__section__img {
     max-width: 400px;
   }
@@ -457,33 +409,45 @@
   #section__productos_listado {
     grid-template-columns: repeat(4, 1fr);
   }
-  .article_producto {
+  #section__productos_listado .article_producto {
     margin: 10 5 10 5;
     width: 300px;
     height: 200px;
   }
-  .article__producto__img {
+  #section__productos_listado .article_producto .article__producto__img {
     max-width: 250px;
     max-height: 150px;
   }
   /** CONTACTO **/
-  #main__section__contacto_descrip {
+  #main__section_contacto #main__section__contacto_descrip p {
     margin-top: 0px;
     font-size: 0.8rem;
   }
-  #main__section__form label {
+  #main__section_contacto #main__section__form label, #main__section_contacto #main__section__form input, #main__section_contacto #main__section__form textarea, #main__section_contacto #main__section__form select {
+    margin: 0px;
     font-size: 0.7rem;
   }
-  #main__section__contacto_image__img {
+  #main__section_contacto #main__section__contacto_image #main__section__contacto_image__img {
     margin-top: 10%;
-    max-width: 380px;
+    max-width: 350px;
   }
 }
-@media (min-width: 1401px) {
+@media screen and (min-width: 1401px) {
+  #footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #footer #footer__section__p p {
+    font-size: 0.9rem;
+    margin: 0px;
+  }
+  #footer #footer__section__rrss a {
+    font-size: 1.6rem;
+  }
   #main {
     gap: 10px;
   }
-  #main__section__img {
+  #main #main__section__img {
     max-width: 500px;
   }
   /*PRODUCTOS*/

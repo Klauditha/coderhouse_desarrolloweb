@@ -1,0 +1,53 @@
+#header__section {
+  font-family: Oswald, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 15vh;
+  height: auto;
+  gap: 100px;
+  background-color: $color-negro;
+  color: $color-azul;
+  #header__section__img {
+    margin-left: 50px;
+    max-width: 120px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#header__nav {
+  min-height: 8vh;
+  height: auto;
+  background-color: $color-azul;
+  color: $color-blanco;
+  font-size: 0.8rem;
+  font-family: Montserrat, sans-serif;
+  .navbar-brand {
+    text-shadow: 2px 2px 2px $color-negro;
+    font-size: 0.9rem;
+  }
+  #navbarSupportedContent {
+    #header__nav__ul {
+      .nav-item {
+        margin-left: 10px;
+      }
+      .header__nav__ul__li {
+        text-decoration: none;
+        .active {
+          a {
+            text-shadow: 2px 2px 2px $color-negro;
+          }
+        }
+        a {
+          color: $color-blanco;
+          hover {
+            color: $color-rojo;
+          }
+        }
+      }
+    }
+  }
+}
