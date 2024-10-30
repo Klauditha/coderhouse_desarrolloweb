@@ -36,34 +36,32 @@
 /********************************************************/
 /***********************movil vertical******************/
 /********************************************************/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #header__section {
     min-height: 10vh;
-  }
-  #header__section {
     justify-content: center;
     gap: 20px;
   }
-  #header__section h1 {
-    font-size: 1rem;
-  }
-  #header__section__img {
+  #header__section #header__section__img {
     margin-left: 20px;
     max-width: 80px;
+  }
+  #header__section h1 {
+    font-size: 1rem;
   }
   #main {
     min-height: 60vh;
     height: auto;
   }
-  #main__section {
+  #main #main__section {
     padding: 10px 20px 10px 20px;
     gap: 10px;
     flex-direction: column;
   }
-  #main__section__img {
+  #main #main__section #main__section__img {
     max-width: 300px;
   }
-  #main__section__presentacion__ul {
+  #main #main__section #main__section__presentacion__ul {
     padding-left: 10px;
   }
   #footer {
@@ -73,16 +71,15 @@
     padding-bottom: 5px;
     flex-direction: column;
   }
-  #footer__section__p {
+  #footer #footer__section__p {
     margin: 0px;
   }
-  #footer__section__p p {
-    margin: 0px;
+  #footer #footer__section__p p {
     padding: 0px;
     text-align: center;
     font-size: 0.9rem;
   }
-  #footer__section__rrss {
+  #footer #footer__section__p #footer__section__rrss {
     gap: 50px;
     margin-right: 0px;
     padding-top: 10px;
@@ -96,18 +93,18 @@
   #main__section_contacto {
     margin-top: 0px;
   }
-  #main__section__contacto_image__img,
-  #main__section__contacto_descrip {
+  #main__section_contacto #main__section__contacto_image__img,
+  #main__section_contacto #main__section__contacto_descrip {
     display: none;
   }
-  #main__section__contacto_descrip_mobile {
+  #main__section_contacto #main__section__contacto_descrip_mobile {
     display: block;
   }
 }
 /********************************************************/
 /***********************tablet vertical******************/
 /********************************************************/
-@media (min-width: 601px) and (max-width: 767.98px) {
+@media screen and (min-width: 601px) and (max-width: 767.98px) {
   #header__section {
     min-height: 10vh;
     justify-content: center;
@@ -117,7 +114,7 @@
     min-height: 60vh;
     height: auto;
   }
-  #main__section__img {
+  #main #main__section__img {
     max-width: 300px;
   }
   #footer {
@@ -127,16 +124,13 @@
     padding-bottom: 5px;
     flex-direction: column;
   }
-  #footer__section__p {
-    margin: 0px;
-  }
-  #footer__section__p p {
+  #footer #footer__section__p p {
     margin: 0px;
     padding: 0px;
     text-align: center;
     font-size: 0.9rem;
   }
-  #footer__section__rrss {
+  #footer #footer__section__rrss {
     gap: 50px;
     margin-right: 0px;
     padding-top: 10px;
@@ -150,11 +144,11 @@
   #main__section_contacto {
     margin-top: 0px;
   }
-  #main__section__contacto_image__img {
+  #main__section_contacto #main__section__contacto_image__img {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1400px) {
+@media screen and (min-width: 768px) and (max-width: 1400px) {
   #main__section__img {
     max-width: 400px;
   }
@@ -162,12 +156,12 @@
   #section__productos_listado {
     grid-template-columns: repeat(4, 1fr);
   }
-  .article_producto {
+  #section__productos_listado .article_producto {
     margin: 10 5 10 5;
     width: 300px;
     height: 200px;
   }
-  .article__producto__img {
+  #section__productos_listado .article_producto .article__producto__img {
     max-width: 250px;
     max-height: 150px;
   }
@@ -184,11 +178,11 @@
     max-width: 380px;
   }
 }
-@media (min-width: 1401px) {
+@media screen and (min-width: 1401px) {
   #main {
     gap: 10px;
   }
-  #main__section__img {
+  #main #main__section__img {
     max-width: 500px;
   }
   /*PRODUCTOS*/
