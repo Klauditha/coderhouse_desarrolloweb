@@ -1,7 +1,5 @@
 #main__section_contacto {
-    margin-top: 20px;
-  }
-  
+  margin-top: 20px;
   #main__section__contacto_descrip,
   #main__section__contacto_descrip_mobile {
     color: $color-negro;
@@ -11,31 +9,31 @@
     text-align: center;
     line-height: 1.4rem;
   }
-  
   #main__section__contacto_descrip_mobile {
     display: none;
   }
-  
-  #main__section__form label {
+  #main__section__form {
     font-family: Lato, sans-serif;
-    font-weight: 800;
-    font-size: 0.8rem;
-    color: $color-azul;
-    line-height: 1.2rem;
-  }
-  
-  #main__section__form input,
-  #main__section__form textarea,
-  #main__section__form select {
-    font-family: Lato, sans-serif;
-    font-weight: 400;
     font-size: 0.8rem;
     line-height: 1.2rem;
-  }
-  
-  #main__section__form .form-group,
-  #main__section__form button {
-    margin: 10px 40px 10px 40px;
+    label {
+      font-weight: 800;
+      color: $color-azul;
+    }
+    input,
+    textarea,
+    select {
+      font-weight: 400;
+    }
+    .form-group,
+    button {
+      margin: 10px 40px 10px 40px;
+    }
+    #main__section__form__btn__submit {
+      margin-left: 70% !important;
+      background-color: $color-azul;
+      width: 100px;
+    }
   }
   #main__section__contacto_image__img {
     max-width: 500px;
@@ -43,9 +41,4 @@
     border-radius: 20px;
     border: 2px solid $color-azul;
   }
-  
-  #main__section__form__btn__submit {
-    margin-left: 70% !important;
-    background-color: $color-azul;
-    width: 100px;
-  }  
+}
