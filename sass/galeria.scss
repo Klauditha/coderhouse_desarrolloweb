@@ -1,41 +1,36 @@
 #main__section__galeria {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  #main__section__galeria .row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .row {
     align-items: center;
+    #main__section__galeria__label {
+      font-family: Montserrat, sans-serif;
+      font-size: 0.8rem;
+      align-items: center;
+    }
   }
-  #main__section__galeria__label{
-    font-family: Montserrat, sans-serif;
-    font-size: 0.8rem;
-    align-items: center;
-  }
-  #main__section__galeria__img {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-  }
+}
+#main__section__galeria__img {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
   .card {
     width: 18rem;
     height: 14rem;
     border: 1px solid $color-amarillo;
-  }
-  .card-title {
     font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: $color-azul;
     text-align: center;
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: $color-azul;      
+    }
+    .card-text {      
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: $color-negro;      
+    }
   }
-  
-  .card-text {
-    font-family: Montserrat, sans-serif;
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: $color-negro;
-    text-align: center;
-  }
-  
+}
