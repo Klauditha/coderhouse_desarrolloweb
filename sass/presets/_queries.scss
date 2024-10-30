@@ -22,8 +22,13 @@
       padding: 10px 20px 10px 20px;
       gap: 10px;
       flex-direction: column;
+      #main__section__presentacion{
+        margin-top: 1rem;
+      }
       #main__section__img {
         max-width: 300px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
       }
       #main__section__presentacion__ul {
         padding-left: 10px;
