@@ -62,10 +62,24 @@
     }
   }
 
-  /*PRODUCTOS*/
-  #section__productos_listado {
-    grid-template-columns: repeat(1, 1fr);
+ /*PRODUCTOS*/
+ #section_productos_listado {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  .card {
+    width: 45vh;
+    height: ($media-query-phone_height)-($media-query-phone-height/1.7);
+    padding: 0px;
+    .card-title {
+      font-size: 0.8rem;
+    }
+    .card-img-top {
+      //max-height: 120px;
+      max-width: 30vh;
+    }
   }
+}
   /*CONTACTO*/
   #main__section_contacto {
     margin-top: 0px;
@@ -118,7 +132,7 @@
     }
   }
   /*PRODUCTOS*/
-  #section__productos_listado {
+  #section_productos_listado {
     grid-template-columns: repeat(3, 1fr);
   }
   /*CONTACTO*/
@@ -150,15 +164,19 @@
     max-width: 400px;
   }
   /*PRODUCTOS*/
-  #section__productos_listado {
+  #section_productos_listado {
+    padding-top: 10px;
+    padding-bottom: 10px;
     grid-template-columns: repeat(4, 1fr);
-    .article_producto {
-      margin: 10 5 10 5;
-      width: 300px;
-      height: 200px;
-      .article__producto__img {
-        max-width: 250px;
-        max-height: 150px;
+    .card {
+      width: ($media-query-desktop/4);
+      height: ($media-query-desktop/4)-40px;
+      padding: 0px;
+      .card-title {
+        font-size: 0.8rem;
+      }
+      .card-img-top {
+        max-height: 120px;
       }
     }
   }
@@ -167,14 +185,16 @@
 
   #main__section_contacto {
     #main__section__contacto_descrip {
-      p{
+      p {
         margin-top: 0px;
         font-size: 0.8rem;
       }
-      
     }
     #main__section__form {
-      label, input, textarea, select {
+      label,
+      input,
+      textarea,
+      select {
         margin: 0px;
         font-size: 0.7rem;
       }
@@ -212,7 +232,8 @@
   }
 
   /*PRODUCTOS*/
-  #section__productos_listado {
+  /*
+  #section_productos_listado {
     grid-template-columns: repeat(4, 1fr);
-  }
+  }*/
 }

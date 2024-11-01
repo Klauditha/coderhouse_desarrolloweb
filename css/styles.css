@@ -237,33 +237,40 @@
   color: #000000;
 }
 
-#section__productos_listado {
-  margin: 20px 0px 20px 0px;
+#section_productos_listado {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-items: center;
   align-items: center;
 }
-
-.article_producto {
+#section_productos_listado .card {
+  width: 350px;
+  height: 16rem;
+  border: 2px solid #0071bc;
+  font-family: Montserrat, sans-serif;
   display: flex;
+  text-align: center;
+  padding: 10px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  border: 2px solid #fa8375;
-  border-radius: 10px;
-  width: 400px;
-  height: 300px;
+  justify-content: space-evenly;
 }
-
-.article__producto__img {
-  max-width: 350px;
-  max-height: 250px;
+#section_productos_listado .card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
 }
-
-.article__producto__h3 {
-  text-align: center;
+#section_productos_listado .card .card-text {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #000000;
+}
+#section_productos_listado .card .card-img-top {
+  max-height: 150px;
+  width: auto;
+  border: 1px solid #000000;
+  border-radius: 10%;
 }
 
 /********************************************************/
@@ -328,8 +335,21 @@
     font-size: 1.5rem;
   }
   /*PRODUCTOS*/
-  #section__productos_listado {
+  #section_productos_listado {
+    padding-top: 10px;
+    padding-bottom: 10px;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #section_productos_listado .card {
+    width: 45vh;
+    height: 233.8823529412px;
+    padding: 0px;
+  }
+  #section_productos_listado .card .card-title {
+    font-size: 0.8rem;
+  }
+  #section_productos_listado .card .card-img-top {
+    max-width: 30vh;
   }
   /*CONTACTO*/
   #main__section_contacto {
@@ -379,7 +399,7 @@
     font-size: 1.6rem;
   }
   /*PRODUCTOS*/
-  #section__productos_listado {
+  #section_productos_listado {
     grid-template-columns: repeat(3, 1fr);
   }
   /*CONTACTO*/
@@ -406,24 +426,31 @@
     max-width: 400px;
   }
   /*PRODUCTOS*/
-  #section__productos_listado {
+  #section_productos_listado {
+    padding-top: 10px;
+    padding-bottom: 10px;
     grid-template-columns: repeat(4, 1fr);
   }
-  #section__productos_listado .article_producto {
-    margin: 10 5 10 5;
-    width: 300px;
-    height: 200px;
+  #section_productos_listado .card {
+    width: 256px;
+    height: 216px;
+    padding: 0px;
   }
-  #section__productos_listado .article_producto .article__producto__img {
-    max-width: 250px;
-    max-height: 150px;
+  #section_productos_listado .card .card-title {
+    font-size: 0.8rem;
+  }
+  #section_productos_listado .card .card-img-top {
+    max-height: 120px;
   }
   /** CONTACTO **/
   #main__section_contacto #main__section__contacto_descrip p {
     margin-top: 0px;
     font-size: 0.8rem;
   }
-  #main__section_contacto #main__section__form label, #main__section_contacto #main__section__form input, #main__section_contacto #main__section__form textarea, #main__section_contacto #main__section__form select {
+  #main__section_contacto #main__section__form label,
+  #main__section_contacto #main__section__form input,
+  #main__section_contacto #main__section__form textarea,
+  #main__section_contacto #main__section__form select {
     margin: 0px;
     font-size: 0.7rem;
   }
@@ -451,9 +478,10 @@
     max-width: 500px;
   }
   /*PRODUCTOS*/
-  #section__productos_listado {
+  /*
+  #section_productos_listado {
     grid-template-columns: repeat(4, 1fr);
-  }
+  }*/
 }
 
 /*# sourceMappingURL=styles.css.map */
