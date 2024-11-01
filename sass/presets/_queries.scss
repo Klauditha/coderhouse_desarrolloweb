@@ -1,5 +1,5 @@
 /********************************************************/
-/***********************movil vertical******************/
+/***********************movil******************/
 /********************************************************/
 @media screen and (max-width: 600px) {
   #header__section {
@@ -68,16 +68,10 @@
   padding-bottom: 10px;
   grid-template-columns: repeat(1, 1fr);
   .card {
-    width: 45vh;
-    height: ($media-query-phone_height)-($media-query-phone-height/1.7);
-    padding: 0px;
+     padding: 0px;
     .card-title {
       font-size: 0.8rem;
-    }
-    .card-img-top {
-      //max-height: 120px;
-      max-width: 30vh;
-    }
+    }    
   }
 }
   /*CONTACTO*/
@@ -131,10 +125,19 @@
       font-size: 1.6rem;
     }
   }
-  /*PRODUCTOS*/
-  #section_productos_listado {
-    grid-template-columns: repeat(3, 1fr);
+ 
+ /*PRODUCTOS*/
+ #section_productos_listado {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  grid-template-columns: repeat(1, 2fr);
+  .card {
+    padding: 0px;
+    .card-title {
+      font-size: 0.8rem;
+    }    
   }
+}
   /*CONTACTO*/
   #main__section_contacto {
     margin-top: 0px;
@@ -169,15 +172,10 @@
     padding-bottom: 10px;
     grid-template-columns: repeat(4, 1fr);
     .card {
-      width: ($media-query-desktop/4);
-      height: ($media-query-desktop/4)-40px;
       padding: 0px;
       .card-title {
         font-size: 0.8rem;
-      }
-      .card-img-top {
-        max-height: 120px;
-      }
+      }      
     }
   }
 
@@ -208,6 +206,7 @@
   }
 }
 
+/*
 @media screen and (min-width: 1401px) {
   #footer {
     padding-top: 0.5rem;
@@ -231,9 +230,5 @@
     }
   }
 
-  /*PRODUCTOS*/
-  /*
-  #section_productos_listado {
-    grid-template-columns: repeat(4, 1fr);
-  }*/
 }
+*/

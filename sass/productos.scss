@@ -3,10 +3,10 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-items: center;
-  align-items: center;  
+  align-items: center;
   .card {
-    width: ($media-query-desktop-large/4);
-    height: 16rem;
+    width: calc(90%);
+    min-height: calc(100%);
     border: 2px solid $color-azul;
     font-family: Montserrat, sans-serif;
     display: flex;
@@ -25,9 +25,10 @@
       font-weight: 400;
       color: $color-negro;
     }
-    .card-img-top{
-      max-height: 150px;      
+    .card-img-top {
+      height: 70%;
       width: auto;
+      max-width: 60%;
       border: 1px solid $color-negro;
       border-radius: 10%;
     }
