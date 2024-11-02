@@ -164,23 +164,57 @@
 }
 #section__acerca #section__acerca__descrip2 {
   font-size: 0.8rem;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 #section__acerca #section__acerca__descrip2 h2 {
+  margin-top: 10px;
   font-size: 1.2rem;
+  text-align: center;
 }
-#section__acerca #section__acerca__descrip2 p {
+#section__acerca #section__acerca__descrip2 #section__acerca__mision {
+  width: calc(50% - 80px);
+  margin-top: 20px;
+  margin-left: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 10px;
+}
+#section__acerca #section__acerca__descrip2 #section__acerca__vision {
+  width: calc(50% - 80px);
+  margin-top: 20px;
+  margin-right: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 10px;
+}
+#section__acerca #section__acerca__descrip2 .section__acerca__misionvision {
+  margin: 0px;
+  padding: 0px;
+}
+#section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+}
+#section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip p {
   color: #0071bc;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip .section__acerca__misionvision__img {
+  max-width: 100px;
 }
 #section__acerca #section__acerca__equipo {
+  padding-top: 40px;
   padding-bottom: 10px;
   padding-left: 40px;
   padding-right: 40px;
 }
 #section__acerca #section__acerca__equipo h2 {
   font-size: 1.2rem;
+  text-align: center;
 }
 #section__acerca #section__acerca__equipo p {
   color: #0071bc;
@@ -193,7 +227,7 @@
   gap: 10px;
 }
 #section__acerca #section__acerca__equipo .card-equipo .card-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #000000;
   text-align: center;
@@ -211,7 +245,7 @@
   color: #0071bc;
 }
 #section__acerca #section__acerca__equipo .card-equipo .card-content .card-img-top {
-  max-width: 200px;
+  max-width: 180px;
   max-height: 180px;
   align-self: center;
 }
