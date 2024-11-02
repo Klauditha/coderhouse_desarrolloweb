@@ -122,7 +122,7 @@
       font-size: 1.6rem;
     }
   }
-
+ 
   /*PRODUCTOS*/
   #section_productos_listado {
     padding-top: 10px;
@@ -174,10 +174,9 @@
     }
   }
 
-   /*GALERIA*/
-   
+   /*GALERIA*/   
    #main__section__galeria__img {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 20px;
   }
 
