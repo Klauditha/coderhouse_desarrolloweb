@@ -136,16 +136,16 @@
   text-decoration: none;
 }
 
-#main__section__presentacion p {
+#main #main__section #main__section__presentacion p {
   margin-bottom: 0px;
 }
-#main__section__presentacion #main__section__presentacion__ul {
+#main #main__section #main__section__presentacion #main__section__presentacion__ul {
   padding-left: 40px;
   font-style: italic;
   font-weight: 400;
 }
-#main__section__presentacion #main__section__img {
-  max-width: 500px;
+#main #main__section picture #main__section__img {
+  max-width: 400px;
 }
 
 .card-img-top {
