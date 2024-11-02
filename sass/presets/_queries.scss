@@ -194,6 +194,52 @@
     padding-bottom: 20px;
   }
 
+  /*ACERCA DE*/
+  #section__acerca {
+    #section__acerca__descrip {
+      font-size: 0.8rem;
+    }
+    #section__acerca__descrip2 {
+      font-size: 0.7rem;
+      gap: 10px;
+      h2 {
+        font-size: 1.1rem;
+      }
+      #section__acerca__vision,
+      #section__acerca__mision {
+        margin-top: 10px;
+      }
+      .section__acerca__misionvision {
+        .section__acerca__misionvision__descrip {
+          .section__acerca__misionvision__img {
+            max-width: 80px;
+          }
+        }
+      }
+    }
+    #section__acerca__equipo {
+      h2 {
+        font-size: 1.1rem;
+      }
+      .card-equipo {
+       
+        .card-title {
+          font-size: 0.8rem;
+        }
+        .card-content {
+          flex-direction: column;
+          .card-text {
+            font-size: 0.7rem;
+          }
+          .card-img-top {
+            margin-top: 10px;
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+
   /** CONTACTO **/
 
   #main__section_contacto {
