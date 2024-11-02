@@ -68,9 +68,23 @@
     padding-bottom: 10px;
     grid-template-columns: repeat(1, 1fr);
     .card {
-      padding: 0px;      
+      padding: 0px;
     }
   }
+
+  /*GALERIA*/
+  #main__section__galeria {
+    #main__section__galeria__label {
+      text-align: center;
+      padding-bottom: 15px;
+      font-weight: 600;
+    }
+  }
+  #main__section__galeria__img {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 20px;
+  }
+
   /*CONTACTO*/
   #main__section_contacto {
     margin-top: 0px;
@@ -122,17 +136,17 @@
       font-size: 1.6rem;
     }
   }
- 
+
   /*PRODUCTOS*/
   #section_productos_listado {
     padding-top: 10px;
     padding-bottom: 10px;
     grid-template-columns: repeat(1, 3fr);
     .card {
-      padding: 0px;      
+      padding: 0px;
     }
   }
- 
+
   /*CONTACTO*/
   #main__section_contacto {
     margin-top: 0px;
@@ -162,7 +176,7 @@
     max-width: 400px;
   }
   /*PRODUCTOS*/
-  #section_productos_listado {    
+  #section_productos_listado {
     padding-top: 10px;
     padding-bottom: 10px;
     grid-template-columns: repeat(4, 1fr);
@@ -174,8 +188,8 @@
     }
   }
 
-   /*GALERIA*/   
-   #main__section__galeria__img {
+  /*GALERIA*/
+  #main__section__galeria__img {
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 20px;
   }

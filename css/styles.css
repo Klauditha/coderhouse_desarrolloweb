@@ -349,6 +349,16 @@
   #section_productos_listado .card {
     padding: 0px;
   }
+  /*GALERIA*/
+  #main__section__galeria #main__section__galeria__label {
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: 600;
+  }
+  #main__section__galeria__img {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 20px;
+  }
   /*CONTACTO*/
   #main__section_contacto {
     margin-top: 0px;
