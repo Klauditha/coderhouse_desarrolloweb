@@ -1,5 +1,5 @@
 /********************************************************/
-/***********************movil******************/
+/***********************MOVILES**************************/
 /********************************************************/
 @media screen and (max-width: 600px) {
   #header__section {
@@ -85,7 +85,7 @@
 }
 
 /********************************************************/
-/***********************tablet vertical******************/
+/***********************TABLETS**************************/
 /********************************************************/
 @media screen and (min-width: 601px) and (max-width: 767.98px) {
   #header__section {
@@ -132,6 +132,7 @@
       padding: 0px;      
     }
   }
+ 
   /*CONTACTO*/
   #main__section_contacto {
     margin-top: 0px;
@@ -171,6 +172,13 @@
         font-size: 0.9rem;
       }
     }
+  }
+
+   /*GALERIA*/
+   
+   #main__section__galeria__img {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 20px;
   }
 
   /** CONTACTO **/
