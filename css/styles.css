@@ -551,6 +551,40 @@
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 20px;
   }
+  /*ACERCA DE*/
+  #section__acerca #section__acerca__descrip {
+    font-size: 0.8rem;
+  }
+  #section__acerca #section__acerca__descrip2 {
+    font-size: 0.7rem;
+    gap: 10px;
+  }
+  #section__acerca #section__acerca__descrip2 h2 {
+    font-size: 1.1rem;
+  }
+  #section__acerca #section__acerca__descrip2 #section__acerca__vision,
+  #section__acerca #section__acerca__descrip2 #section__acerca__mision {
+    margin-top: 10px;
+  }
+  #section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip .section__acerca__misionvision__img {
+    max-width: 80px;
+  }
+  #section__acerca #section__acerca__equipo h2 {
+    font-size: 1.1rem;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo .card-title {
+    font-size: 0.8rem;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo .card-content {
+    flex-direction: column;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo .card-content .card-text {
+    font-size: 0.7rem;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo .card-content .card-img-top {
+    margin-top: 10px;
+    max-width: 100px;
+  }
   /** CONTACTO **/
   #main__section_contacto #main__section__contacto_descrip p {
     margin-top: 0px;
