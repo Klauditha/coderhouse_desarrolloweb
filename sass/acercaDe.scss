@@ -1,5 +1,68 @@
-.card-img-top {
-  max-width: 200px;
-  max-height: 200px;
-  align-self: center;
+#section__acerca {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  #section__acerca__descrip {
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.4rem;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #section__acerca__descrip2 {
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      color: $color-azul;
+    }
+  }
+  #section__acerca__equipo {
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      color: $color-azul;
+    }
+    .card-equipo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $color-negro;
+        text-align: center;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .card-text {
+          font-size: 0.8rem;
+          font-weight: 600;
+          color: $color-azul;
+        }
+        .card-img-top {
+          max-width: 200px;
+          max-height: 180px;
+          align-self: center;
+        }
+      }
+    }
+  }
 }
