@@ -211,6 +211,9 @@
   font-size: 0.8rem;
   align-items: center;
 }
+#main__section__galeria #main__section__galeria__select {
+  font-size: 0.8rem;
+}
 
 #main__section__galeria__img {
   display: grid;
@@ -277,7 +280,7 @@
 }
 
 /********************************************************/
-/***********************movil******************/
+/***********************MOVILES**************************/
 /********************************************************/
 @media screen and (max-width: 600px) {
   #header__section {
@@ -359,7 +362,7 @@
   }
 }
 /********************************************************/
-/***********************tablet vertical******************/
+/***********************TABLETS**************************/
 /********************************************************/
 @media screen and (min-width: 601px) and (max-width: 767.98px) {
   #header__section {
@@ -436,6 +439,11 @@
   }
   #section_productos_listado .card .card-title {
     font-size: 0.9rem;
+  }
+  /*GALERIA*/
+  #main__section__galeria__img {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 20px;
   }
   /** CONTACTO **/
   #main__section_contacto #main__section__contacto_descrip p {
