@@ -204,6 +204,7 @@
   padding-right: 20px;
 }
 #section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip .section__acerca__misionvision__img {
+  display: block;
   max-width: 100px;
 }
 #section__acerca #section__acerca__equipo {
@@ -454,6 +455,41 @@
   #main__section__galeria__img {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 20px;
+  }
+  /*ACERCA DE*/
+  #section__acerca #section__acerca__descrip {
+    font-size: 0.8rem;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  #section__acerca #section__acerca__descrip2 #section__acerca__mision,
+  #section__acerca #section__acerca__descrip2 #section__acerca__vision {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  #section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip .section__acerca__misionvision__img {
+    display: none;
+  }
+  #section__acerca #section__acerca__equipo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo {
+    margin-top: 10px;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo .card-content {
+    flex-direction: column;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo .card-content .card-img-top {
+    margin-top: 10px;
+    max-width: 100px;
+  }
+  #section__acerca #section__acerca__equipo .card-equipo .card-content .card-text {
+    text-align: center;
   }
   /*CONTACTO*/
   #main__section_contacto {
