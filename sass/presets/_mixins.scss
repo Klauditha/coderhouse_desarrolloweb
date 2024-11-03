@@ -1,16 +1,16 @@
 @mixin flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin box-model($width, $height, $border, $padding) {
-    width: $width;
-    height: $height;
-    border: $border;
-    padding: $padding;
+  width: $width;
+  height: $height;
+  border: $border;
+  padding: $padding;
 }
 
-.btn1{
-    @include box-model(100px, 50px, 5px, 10px);
+.btn1 {
+  @include box-model(100px, 50px, 5px, 10px);
 }
