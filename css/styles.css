@@ -26,6 +26,39 @@
 }
 
 /* Variables de tipografía - Fin */
+@keyframes escalar_imagen {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes escalar_imagen_agrandar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes girar_imagen {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn1 {
   width: 100px;
   height: 50px;
@@ -48,6 +81,14 @@
 #header__section #header__section__img {
   margin-left: 50px;
   max-width: 120px;
+  animation-name: escalar_imagen;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+#header__section #header__section__img:hover {
+  animation-name: girar_imagen;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 #header__section h1 {
   font-size: 1.5rem;
@@ -77,7 +118,7 @@
 #header__nav #navbarSupportedContent #header__nav__ul .header__nav__ul__li a {
   color: #ffffff;
 }
-#header__nav #navbarSupportedContent #header__nav__ul .header__nav__ul__li a hover {
+#header__nav #navbarSupportedContent #header__nav__ul .header__nav__ul__li a:hover {
   color: #fa8375;
 }
 
@@ -134,6 +175,11 @@
 #footer #footer__section__rrss a {
   color: #ffffff;
   text-decoration: none;
+}
+#footer #footer__section__rrss a:hover {
+  animation-name: girar_imagen;
+  animation-duration: 1s;
+  color: #eaa315;
 }
 
 #main #main__section #main__section__presentacion p {
@@ -249,6 +295,10 @@
   max-width: 180px;
   max-height: 180px;
   align-self: center;
+}
+#section__acerca #section__acerca__equipo .card-equipo .card-content .card-img-top:hover {
+  animation-name: girar_imagen;
+  animation-duration: 1s;
 }
 
 #main__section_contacto {
@@ -374,6 +424,10 @@
   max-width: 60%;
   border: 1px solid #000000;
   border-radius: 10%;
+}
+#section_productos_listado .card .card-img-top:hover {
+  animation-name: escalar_imagen_agrandar;
+  animation-duration: 2s;
 }
 
 /********************************************************/

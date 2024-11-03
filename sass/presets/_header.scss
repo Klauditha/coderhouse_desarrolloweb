@@ -12,6 +12,14 @@
   #header__section__img {
     margin-left: 50px;
     max-width: 120px;
+    animation-name: escalar_imagen;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;    
+    &:hover {
+      animation-name: girar_imagen;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+    }
   }
   h1 {
     font-size: 1.5rem;
@@ -43,7 +51,7 @@
         }
         a {
           color: $color-blanco;
-          hover {
+          &:hover {
             color: $color-rojo;
           }
         }

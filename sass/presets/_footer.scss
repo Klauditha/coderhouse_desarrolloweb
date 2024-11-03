@@ -27,6 +27,11 @@
     a {
       color: $color-blanco;
       text-decoration: none;
-    }
+      &:hover {
+        animation-name: girar_imagen;
+        animation-duration: 1s;
+        color: $color-amarillo;
+      }
+    }    
   }
 }
