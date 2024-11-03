@@ -96,6 +96,10 @@
           max-width: 180px;
           max-height: 180px;
           align-self: center;
+          &:hover {
+            animation-name: girar_imagen;
+            animation-duration: 1s;
+          }
         }
       }
     }
