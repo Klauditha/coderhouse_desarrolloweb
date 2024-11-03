@@ -1,16 +1,40 @@
-@mixin flex {
+@mixin flex-row-justify-variable($justify, $gap: 0px) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: $justify;
+  gap: $gap;
 }
 
-@mixin box-model($width, $height, $border, $padding) {
-  width: $width;
-  height: $height;
-  border: $border;
-  padding: $padding;
+@mixin flex-row-alignItems-variable($alignItems) {
+  display: flex;
+  flex-direction: row;
+  align-items: $alignItems;
 }
 
-.btn1 {
-  @include box-model(100px, 50px, 5px, 10px);
+@mixin flex-direction-justify-alignItems-variable(
+  $direction,
+  $justify,
+  $alignItems,
+  $gap: 0px
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $alignItems;
+  gap: $gap;
+}
+
+@mixin flex-direction-justify-alignItems-flexWrap-variable(
+  $direction,
+  $justify,
+  $alignItems,
+  $flexWrap,
+  $gap: 0px
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $alignItems;
+  gap: $gap;
+  flex-wrap: wrap;
 }

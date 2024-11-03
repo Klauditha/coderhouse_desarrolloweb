@@ -59,22 +59,15 @@
     transform: rotate(360deg);
   }
 }
-.btn1 {
-  width: 100px;
-  height: 50px;
-  border: 5px;
-  padding: 10px;
-}
-
 #header__section {
   font-family: Oswald, sans-serif;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
   min-height: 15vh;
   height: auto;
-  gap: 100px;
   background-color: #000000;
   color: #0071bc;
 }
@@ -125,11 +118,11 @@
 #main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
   min-height: 67vh;
   height: auto;
-  gap: 20px;
   color: #000000;
   font-family: Lato, sans-serif;
   font-weight: 400;
@@ -138,10 +131,11 @@
 }
 #main #main__section {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  padding: 0px 20px 0px 20px;
+  align-items: center;
   gap: 0px;
+  padding: 0px 20px 0px 20px;
 }
 
 #footer {
@@ -153,9 +147,11 @@
   font-size: 12px;
   text-decoration: none;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+  flex-wrap: wrap;
 }
 #footer #footer__section__p {
   display: flex;
@@ -166,8 +162,9 @@
 }
 #footer #footer__section__rrss {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
   font-size: 1rem;
   margin-right: 40px;
@@ -213,6 +210,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 0px;
   gap: 20px;
 }
 #section__acerca #section__acerca__descrip2 h2 {
@@ -241,8 +239,8 @@
 #section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip {
   display: flex;
   flex-direction: row;
-  text-align: left;
   align-items: center;
+  text-align: left;
 }
 #section__acerca #section__acerca__descrip2 .section__acerca__misionvision .section__acerca__misionvision__descrip p {
   color: #0071bc;
@@ -269,8 +267,8 @@
 #section__acerca #section__acerca__equipo .card-equipo {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 #section__acerca #section__acerca__equipo .card-equipo .card-title {
@@ -282,8 +280,8 @@
 #section__acerca #section__acerca__equipo .card-equipo .card-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 #section__acerca #section__acerca__equipo .card-equipo .card-content .card-text {
@@ -393,6 +391,8 @@
   gap: 10px;
   justify-items: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #section_productos_listado .card {
   width: 95%;
@@ -404,8 +404,9 @@
 #section_productos_listado .card .card-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  gap: 0px;
 }
 #section_productos_listado .card .card-title {
   font-size: 1rem;

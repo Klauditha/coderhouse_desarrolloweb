@@ -4,6 +4,8 @@
   gap: 10px;
   justify-items: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   .card {
     width: calc(95%);
     min-height: calc(100%);
@@ -11,10 +13,11 @@
     font-family: Montserrat, sans-serif;
     text-align: center;
     .card-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
+      @include flex-direction-justify-alignItems-variable(
+        column,
+        space-around,
+        center
+      );
     }
     .card-title {
       font-size: 1rem;

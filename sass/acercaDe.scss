@@ -10,13 +10,10 @@
     padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    
   }
   #section__acerca__descrip2 {
     font-size: 0.8rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex-row-justify-variable(space-evenly);
     gap: 20px;
     h2 {
       margin-top: 10px;
@@ -41,10 +38,8 @@
       margin: 0px;
       padding: 0px;
       .section__acerca__misionvision__descrip {
-        display: flex;
-        flex-direction: row;
+        @include flex-row-alignItems-variable(center);
         text-align: left;
-        align-items: center;
         p {
           color: $color-azul;
           padding-left: 20px;
@@ -70,12 +65,12 @@
       color: $color-azul;
     }
     .card-equipo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-
+      @include flex-direction-justify-alignItems-variable(
+        column,
+        center,
+        center,
+        10px
+      );
       .card-title {
         font-size: 0.9rem;
         font-weight: 600;
@@ -83,11 +78,12 @@
         text-align: center;
       }
       .card-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+        @include flex-direction-justify-alignItems-variable(
+          row,
+          center,
+          center,
+          10px
+        );
         .card-text {
           font-size: 0.8rem;
           font-weight: 600;

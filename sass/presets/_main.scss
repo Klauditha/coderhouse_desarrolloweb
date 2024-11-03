@@ -1,21 +1,19 @@
 #main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex-direction-justify-alignItems-variable(
+    column,
+    center,
+    center,
+    20px
+  );
   min-height: 67vh;
   height: auto;
-  gap: 20px;
   color: $color-negro;
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.2rem;
   #main__section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-direction-justify-alignItems-variable(row, center, center);
     padding: 0px 20px 0px 20px;
-    gap: 0px;
   }
 }

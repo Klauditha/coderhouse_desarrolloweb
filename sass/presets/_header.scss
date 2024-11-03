@@ -1,12 +1,13 @@
 #header__section {
   font-family: Oswald, sans-serif;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  @include flex-direction-justify-alignItems-variable(
+    row,
+    flex-start,
+    center,
+    100px
+  );
   min-height: 15vh;
   height: auto;
-  gap: 100px;
   background-color: $color-negro;
   color: $color-azul;
   #header__section__img {
@@ -14,7 +15,7 @@
     max-width: 120px;
     animation-name: escalar_imagen;
     animation-duration: 15s;
-    animation-iteration-count: infinite;    
+    animation-iteration-count: infinite;
     &:hover {
       animation-name: girar_imagen;
       animation-duration: 1s;

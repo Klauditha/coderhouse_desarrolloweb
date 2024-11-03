@@ -6,10 +6,12 @@
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-direction-justify-alignItems-flexWrap-variable(
+    row,
+    space-between,
+    center,
+    wrap
+  );
   #footer__section__p {
     display: flex;
     flex-direction: column;
@@ -18,10 +20,12 @@
     margin-left: 40px;
   }
   #footer__section__rrss {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    @include flex-direction-justify-alignItems-variable(
+      row,
+      space-between,
+      center,
+      20px
+    );
     font-size: 1rem;
     margin-right: 40px;
     a {
@@ -32,6 +36,6 @@
         animation-duration: 1s;
         color: $color-amarillo;
       }
-    }    
+    }
   }
 }
