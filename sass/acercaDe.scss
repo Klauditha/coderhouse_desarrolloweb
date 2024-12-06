@@ -1,3 +1,6 @@
+@use "presets/mixins";
+@use "presets/variables";
+
 #section__acerca {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -13,7 +16,7 @@
   }
   #section__acerca__descrip2 {
     font-size: 0.8rem;
-    @include flex-row-justify-variable(space-evenly);
+    @include mixins.flex-row-justify-variable(space-evenly);
     gap: 20px;
     h2 {
       margin-top: 10px;
@@ -38,10 +41,10 @@
       margin: 0px;
       padding: 0px;
       .section__acerca__misionvision__descrip {
-        @include flex-row-alignItems-variable(center);
+        @include mixins.flex-row-alignItems-variable(center);
         text-align: left;
         p {
-          color: $color-azul;
+          color: variables.$color-azul;
           padding-left: 20px;
           padding-right: 20px;
         }
@@ -62,10 +65,10 @@
       text-align: center;
     }
     p {
-      color: $color-azul;
+      color: variables.$color-azul;
     }
     .card-equipo {
-      @include flex-direction-justify-alignItems-variable(
+      @include mixins.flex-direction-justify-alignItems-variable(
         column,
         center,
         center,
@@ -74,11 +77,11 @@
       .card-title {
         font-size: 0.9rem;
         font-weight: 600;
-        color: $color-negro;
+        color: variables.$color-negro;
         text-align: center;
       }
       .card-content {
-        @include flex-direction-justify-alignItems-variable(
+        @include mixins.flex-direction-justify-alignItems-variable(
           row,
           center,
           center,
@@ -87,7 +90,7 @@
         .card-text {
           font-size: 0.8rem;
           font-weight: 600;
-          color: $color-azul;
+          color: variables.$color-azul;
         }
         .card-img-top {
           max-width: 180px;

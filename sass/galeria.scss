@@ -1,3 +1,5 @@
+@use "presets/variables";
+
 #main__section__galeria {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -22,18 +24,18 @@
   .card {
     width: 18rem;
     height: 14rem;
-    border: 1px solid $color-amarillo;
+    border: 1px solid variables.$color-amarillo;
     font-family: Montserrat, sans-serif;
     text-align: center;
     .card-title {
       font-size: 1rem;
       font-weight: 600;
-      color: $color-azul;
+      color: variables.$color-azul;
     }
     .card-text {
       font-size: 0.8rem;
       font-weight: 400;
-      color: $color-negro;
+      color: variables.$color-negro;
     }
   }
 }

@@ -1,3 +1,6 @@
+@use "presets/mixins";
+@use "presets/variables";
+
 #section_productos_listado {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -9,11 +12,11 @@
   .card {
     width: calc(95%);
     min-height: calc(100%);
-    border: 2px solid $color-azul;
+    border: 2px solid variables.$color-azul;
     font-family: Montserrat, sans-serif;
     text-align: center;
     .card-body {
-      @include flex-direction-justify-alignItems-variable(
+      @include mixins.flex-direction-justify-alignItems-variable(
         column,
         space-around,
         center
@@ -22,19 +25,19 @@
     .card-title {
       font-size: 1rem;
       font-weight: 600;
-      color: $color-negro;
+      color: variables.$color-negro;
     }
     .card-text {
       padding-top: 10px;
       font-size: 0.8rem;
       font-weight: 600;
-      color: $color-azul;
+      color: variables.$color-azul;
     }
     .card-img-top {
       height: 70%;
       width: auto;
       max-width: 60%;
-      border: 1px solid $color-negro;
+      border: 1px solid variables.$color-negro;
       border-radius: 10%;
       &:hover {
         animation-name: escalar_imagen_agrandar;

@@ -1,5 +1,8 @@
+@use "mixins";
+@use "variables";
+
 #main {
-  @include flex-direction-justify-alignItems-variable(
+  @include mixins.flex-direction-justify-alignItems-variable(
     column,
     center,
     center,
@@ -7,13 +10,13 @@
   );
   min-height: 67vh;
   height: auto;
-  color: $color-negro;
+  color: variables.$color-negro;
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.2rem;
   #main__section {
-    @include flex-direction-justify-alignItems-variable(row, center, center);
+    @include mixins.flex-direction-justify-alignItems-variable(row, center, center);
     padding: 0px 20px 0px 20px;
   }
 }

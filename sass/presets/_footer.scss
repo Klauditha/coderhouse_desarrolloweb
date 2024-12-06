@@ -1,12 +1,15 @@
+@use "mixins";
+@use "variables";
+
 #footer {
   min-height: 10vh;
   height: auto;
-  color: $color-blanco;
-  background-color: $color-negro;
+  color: variables.$color-blanco;
+  background-color: variables.$color-negro;
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
-  @include flex-direction-justify-alignItems-flexWrap-variable(
+  @include mixins.flex-direction-justify-alignItems-flexWrap-variable(
     row,
     space-between,
     center,
@@ -20,7 +23,7 @@
     margin-left: 40px;
   }
   #footer__section__rrss {
-    @include flex-direction-justify-alignItems-variable(
+    @include mixins.flex-direction-justify-alignItems-variable(
       row,
       space-between,
       center,
@@ -29,12 +32,12 @@
     font-size: 1rem;
     margin-right: 40px;
     a {
-      color: $color-blanco;
+      color: variables.$color-blanco;
       text-decoration: none;
       &:hover {
         animation-name: girar_imagen;
         animation-duration: 1s;
-        color: $color-amarillo;
+        color: variables.$color-amarillo;
       }
     }
   }

@@ -1,8 +1,10 @@
+@use "presets/variables";
+
 #main__section_contacto {
   margin-top: 20px;
   #main__section__contacto_descrip,
   #main__section__contacto_descrip_mobile {
-    color: $color-negro;
+    color: variables.$color-negro;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
@@ -18,7 +20,7 @@
     line-height: 1.2rem;
     label {
       font-weight: 800;
-      color: $color-azul;
+      color: variables.$color-azul;
     }
     input,
     textarea,
@@ -31,7 +33,7 @@
     }
     #main__section__form__btn__submit {
       margin-left: 70% !important;
-      background-color: $color-azul;
+      background-color: variables.$color-azul;
       width: 100px;
     }
   }
@@ -39,6 +41,6 @@
     max-width: 500px;
     align-self: center;
     border-radius: 20px;
-    border: 2px solid $color-azul;
+    border: 2px solid variables.$color-azul;
   }
 }
